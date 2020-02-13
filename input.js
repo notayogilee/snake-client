@@ -22,6 +22,9 @@ const handleUserInput = ('data', key => {
   if (key === '\u0003') {
     process.exit()
   }
+  if (key === 'l') {
+    connection.write('Say: HI!');
+  }
 })
 const setupInput = function (conn) {
   connection = conn;
